@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    padding: 1em;
+    font-size: 100px;
+}
+
+.hamburger-menu {
+    width: 1em;
+    height: 1em;
+    padding: 0.2em;
+    background-color: #0af;
+    cursor: pointer;
+    margin: 0 auto;
+
+    div {
+        background-color: white;
+        width: 1em;
+        height: 0.2em;
+        margin-bottom: 0.2em;
+        transition: all 0.2s ease-out;
+    }
+
+    &.open {
+        .one {
+            transform: translateY(0.4em) rotate(45deg);
+        }
+
+        .two {
+            opacity: 0;
+        }
+
+        .three {
+            transform: translateY(-0.4em) rotate(-45deg);
+        }
+    }
+}
